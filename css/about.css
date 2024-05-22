@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, Arial, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the video is behind other elements */
+    overflow: hidden;
+}
+
+#bgVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire background */
+}
+
+h1 {
+    color: blue;
+    font-size: 400%;
+    opacity: 0.9;
+    padding: 150px;
+    margin-top: 50px; /* Ensure the header is not hidden by the sticky nav */
+}
+/*about me*/
+.orange-text {
+    color: rgb(255, 255, 255);
+    font-size: 300%;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: rgb(92, 80, 69);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Sticky navigation styles */
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(82, 48, 32);
+    z-index: 1000; /* Ensure the nav is above other elements */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+/* About Me specific styles */
+.about-section {
+    background-color: rgba(232, 190, 85, 0.8);
+    opacity: 0.7;
+    border-radius: 50px;
+    padding: 40px;
+    margin: 5px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    color: #294cd6;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    position: fixed; /* Fixed position to stick to the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+    color: white;
+    background-color: rgba(232, 190, 85,0.8);
+    z-index: 1000; /* Ensure the footer is above other elements */
+    
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #294cd6;
+    color: white;
+    font-size: 25px;
+    display: block;
+ }

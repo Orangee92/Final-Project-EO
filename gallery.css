@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: -apple-system, Arial, sans-serif;
+    text-align: center;
+    overflow: hidden; /* Prevent scrollbars from appearing */
+    position: relative; /* Ensure content is positioned correctly */
+ }
+ 
+ .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the video is behind other elements */
+    overflow: hidden;
+ }
+ 
+ #bgVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire background */
+ }
+ 
+ h1 {
+    color: blue;
+    font-size: 400%;
+    opacity: 0.9;
+    padding: 150px;
+    margin-top: 50px; /* Ensure the header is not hidden by the sticky nav */
+ }
+ 
+ .orange-text {
+    color: rgb(255, 255, 255);
+    font-size: 700%;
+ }
+ 
+ /* Navigation bar styles */
+ nav {
+    background-color: rgb(69, 80, 92);
+ }
+ 
+ nav ul {
+    list-style-type: none;
+    padding: 10px;
+ }
+ 
+ nav ul li {
+    display: inline;
+    margin-right: 20px;
+ }
+ 
+ nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+ }
+ 
+ /* Sticky navigation styles */
+ .sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(69, 80, 92);
+    z-index: 1000; /* Ensure the nav is above other elements */
+    display: flex;
+    justify-content: center;
+ }
+ 
+ /* Main content and typography styles */
+ .fcf-body {
+    padding: 30px;
+    max-width: 100%;
+    text-align: center;
+ }
+ 
+ h2 {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+ }
+ 
+ .category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+ }
+ 
+ .category img,
+ .category video {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ 
+ footer {
+    padding: 30px;
+    color: white;
+    background-color: rgb(23, 48, 123);
+ }
